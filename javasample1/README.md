@@ -1,1 +1,1 @@
-test with JUnit 4
+test with JUnit 45
