@@ -26,6 +26,7 @@ public class TicTacToeTest extends TestCase {
 	public void testInitBoard() {
 		System.out.println("pass");
 		//fail("Not yet implemented");
+		//new change
 	}
 
 }
