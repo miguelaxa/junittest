@@ -21,7 +21,8 @@ public class shape {
 	}
 
 	int multShape(int l, int w, int h) {
-		int volume = l * w * h;
+		
+		int volume = l * w + h;
 
 		System.out.println(" A " + color + " shape with " + sides + " sides");
 		return volume;

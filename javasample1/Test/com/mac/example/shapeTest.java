@@ -30,13 +30,13 @@ public class shapeTest {
 	@Test
 	public void testPshape() {
 		shape myShape = new shape(6, "blue");
-		assertEquals("Result", 16, myShape.multShape(2, 2, 4));
+		assertEquals("Result", 8, myShape.multShape(2, 2, 4));
 	}
 
 	@Test
 	public void testmmshape() {
 		shape myShape = new shape(9, "yellow");
-		assertEquals("Result", 288, myShape.multShape(12, 12, 2));
+		assertEquals("Result", 146, myShape.multShape(12, 12, 2));
 	}
 
 }
