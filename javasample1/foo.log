@@ -1,0 +1,428 @@
+I 2013-01-20 10:38:39:040 server.cc(53) Starting WebDriver server on port: '26609' on host: ''
+T 2013-01-20 10:38:39:041 server.cc(594) Entering Server::PopulateCommandRepository
+T 2013-01-20 10:38:39:041 server.cc(83) Entering Server::Start
+D 2013-01-20 10:38:39:041 server.cc(104) Mongoose ACL is -0.0.0.0/0,+127.0.0.1
+T 2013-01-20 10:38:39:593 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:39:593 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:39:593 server.cc(137) Process request with: URI: /status HTTP verb: GET
+body: {}
+T 2013-01-20 10:38:39:593 server.cc(224) Entering Server::DispatchCommand
+T 2013-01-20 10:38:39:593 server.cc(524) Entering Server::LookupCommand
+D 2013-01-20 10:38:39:594 server.cc(233) Command: GET /status {}
+T 2013-01-20 10:38:39:594 response.cc(54) Entering Response::SetSuccessResponse
+T 2013-01-20 10:38:39:594 response.cc(60) Entering Response::SetResponse
+T 2013-01-20 10:38:39:594 response.cc(42) Entering Response::Serialize
+D 2013-01-20 10:38:39:594 server.cc(302) Response: {"sessionId":"","status":0,"value":{"build":{"version":"2.21.0"},"os":{"arch":"x64","name":"windows","version":"6.1.7601"}}}
+
+T 2013-01-20 10:38:39:594 server.cc(353) Entering Server::SendResponseToClient
+T 2013-01-20 10:38:39:594 response.cc(31) Entering Response::Deserialize
+T 2013-01-20 10:38:39:594 server.cc(407) Entering Server::SendHttpOk
+T 2013-01-20 10:38:39:765 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:39:765 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:39:765 server.cc(190) Entering Server::ReadRequestBody
+T 2013-01-20 10:38:39:765 server.cc(137) Process request with: URI: /session HTTP verb: POST
+body: {"desiredCapabilities":{"platform":"WINDOWS","ensureCleanSession":true,"ignoreProtectedModeSettings":true,"browserName":"internet explorer","version":""}}
+T 2013-01-20 10:38:39:765 server.cc(224) Entering Server::DispatchCommand
+T 2013-01-20 10:38:39:765 server.cc(524) Entering Server::LookupCommand
+D 2013-01-20 10:38:39:765 server.cc(233) Command: POST /session {"desiredCapabilities":{"platform":"WINDOWS","ensureCleanSession":true,"ignoreProtectedModeSettings":true,"browserName":"internet explorer","version":""}}
+T 2013-01-20 10:38:39:765 server.cc(168) Entering Server::CreateSession
+T 2013-01-20 10:38:39:765 IESession.cpp(28) Entering IESession::Initialize
+D 2013-01-20 10:38:39:765 IESession.cpp(46) Mutex acquired for session initalization
+T 2013-01-20 10:38:39:776 BrowserFactory.cpp(21) Entering BrowserFactory::BrowserFactory
+T 2013-01-20 10:38:39:776 BrowserFactory.cpp(504) Entering BrowserFactory::GetExecutableLocation
+T 2013-01-20 10:38:39:776 BrowserFactory.cpp(548) Entering BrowserFactory::GetRegistryValue
+T 2013-01-20 10:38:39:776 BrowserFactory.cpp(548) Entering BrowserFactory::GetRegistryValue
+T 2013-01-20 10:38:39:776 BrowserFactory.cpp(611) Entering BrowserFactory::GetIEVersion
+T 2013-01-20 10:38:39:776 BrowserFactory.cpp(662) Entering BrowserFactory::GetOSVersion
+T 2013-01-20 10:38:39:777 IECommandExecutor.cpp(96) Entering IECommandExecutor::OnCreate
+T 2013-01-20 10:38:39:777 IECommandExecutor.cpp(752) Entering IECommandExecutor::PopulateCommandHandlers
+T 2013-01-20 10:38:39:777 IECommandExecutor.cpp(739) Entering IECommandExecutor::PopulateElementFinderMethods
+T 2013-01-20 10:38:39:777 IECommandExecutor.cpp(83) Entering IECommandExecutor::OnInit
+D 2013-01-20 10:38:39:778 IESession.cpp(81) Releasing session initialization mutex
+T 2013-01-20 10:38:39:778 server.cc(340) Entering Server::LookupSession
+T 2013-01-20 10:38:39:778 IESession.cpp(126) Entering IESession::ExecuteCommand
+T 2013-01-20 10:38:39:778 IECommandExecutor.cpp(174) Entering IECommandExecutor::OnSetCommand
+T 2013-01-20 10:38:39:778 command.cc(27) Entering Command::Populate
+D 2013-01-20 10:38:39:778 command.cc(33) Raw JSON command: { "command" : "newSession", "locator" : { }, "parameters" : {"desiredCapabilities":{"platform":"WINDOWS","ensureCleanSession":true,"ignoreProtectedModeSettings":true,"browserName":"internet explorer","version":""}} }
+T 2013-01-20 10:38:39:778 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:39:778 IECommandExecutor.cpp(185) Entering IECommandExecutor::OnExecCommand
+T 2013-01-20 10:38:39:778 IECommandExecutor.cpp(420) Entering IECommandExecutor::DispatchCommand
+T 2013-01-20 10:38:39:778 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:39:778 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+W 2013-01-20 10:38:39:778 IECommandExecutor.cpp(526) Browser ID requested was an empty string
+W 2013-01-20 10:38:39:778 IECommandExecutor.cpp(489) Unable to find current browser
+T 2013-01-20 10:38:39:778 IECommandExecutor.cpp(564) Entering IECommandExecutor::CreateNewBrowser
+T 2013-01-20 10:38:39:778 BrowserFactory.cpp(41) Entering BrowserFactory::LaunchBrowserProcess
+D 2013-01-20 10:38:39:778 BrowserFactory.cpp(45) Ignoring Protected Mode Settings: 1
+D 2013-01-20 10:38:39:778 BrowserFactory.cpp(51) Has Valid Protected Mode Settings: 0
+T 2013-01-20 10:38:40:749 BrowserFactory.cpp(196) Entering BrowserFactory::AttachToBrowser
+T 2013-01-20 10:38:44:241 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:44:242 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:44:242 server.cc(137) Process request with: URI: / HTTP verb: GET
+body: {}
+T 2013-01-20 10:38:44:242 server.cc(407) Entering Server::SendHttpOk
+T 2013-01-20 10:38:44:506 BrowserFactory.cpp(160) Entering BrowserFactory::GetDocumentFromWindowHandle
+T 2013-01-20 10:38:44:506 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:519 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:529 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+D 2013-01-20 10:38:44:534 BrowserFactory.cpp(215) Ignoring zoom setting: 0
+T 2013-01-20 10:38:44:534 BrowserFactory.cpp(261) Entering BrowserFactory::GetZoomLevel
+T 2013-01-20 10:38:44:549 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:559 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+D 2013-01-20 10:38:44:568 BrowserFactory.cpp(341) Browser zoom level is 100%
+T 2013-01-20 10:38:44:569 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+I 2013-01-20 10:38:44:573 IECommandExecutor.cpp(597) Persistent hovering set to: 1
+T 2013-01-20 10:38:44:573 BrowserFactory.cpp(21) Entering BrowserFactory::BrowserFactory
+T 2013-01-20 10:38:44:573 BrowserFactory.cpp(504) Entering BrowserFactory::GetExecutableLocation
+T 2013-01-20 10:38:44:573 BrowserFactory.cpp(548) Entering BrowserFactory::GetRegistryValue
+T 2013-01-20 10:38:44:573 BrowserFactory.cpp(548) Entering BrowserFactory::GetRegistryValue
+T 2013-01-20 10:38:44:573 BrowserFactory.cpp(611) Entering BrowserFactory::GetIEVersion
+T 2013-01-20 10:38:44:573 BrowserFactory.cpp(662) Entering BrowserFactory::GetOSVersion
+T 2013-01-20 10:38:44:573 DocumentHost.cpp(22) Entering DocumentHost::DocumentHost
+T 2013-01-20 10:38:44:573 Browser.cpp(22) Entering Browser::Browser
+T 2013-01-20 10:38:44:573 Browser.cpp(239) Entering Browser::AttachEvents
+T 2013-01-20 10:38:44:575 IECommandExecutor.cpp(554) Entering IECommandExecutor::AddManagedBrowser
+T 2013-01-20 10:38:44:575 IECommandExecutor.cpp(558) Setting current browser id to ffb7d246-4753-4885-9d68-9065129d8f19
+T 2013-01-20 10:38:44:575 response.cc(60) Entering Response::SetResponse
+T 2013-01-20 10:38:44:575 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:575 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:575 response.cc(42) Entering Response::Serialize
+T 2013-01-20 10:38:44:579 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:579 IECommandExecutor.cpp(208) Entering IECommandExecutor::OnGetResponse
+T 2013-01-20 10:38:44:579 IECommandExecutor.cpp(302) Entering IECommandExecutor::OnIsSessionValid
+D 2013-01-20 10:38:44:579 server.cc(302) Response: {"sessionId":"a1effd37-58d8-4586-96ab-17fb43c574bb","status":303,"value":"/session/a1effd37-58d8-4586-96ab-17fb43c574bb"}
+
+T 2013-01-20 10:38:44:579 server.cc(353) Entering Server::SendResponseToClient
+T 2013-01-20 10:38:44:579 response.cc(31) Entering Response::Deserialize
+T 2013-01-20 10:38:44:579 response.cc(54) Entering Response::SetSuccessResponse
+T 2013-01-20 10:38:44:579 response.cc(60) Entering Response::SetResponse
+T 2013-01-20 10:38:44:579 server.cc(509) Entering Server::SendHttpSeeOther
+T 2013-01-20 10:38:44:617 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:44:617 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:44:617 server.cc(137) Process request with: URI: /session/a1effd37-58d8-4586-96ab-17fb43c574bb HTTP verb: GET
+body: {}
+T 2013-01-20 10:38:44:617 server.cc(224) Entering Server::DispatchCommand
+T 2013-01-20 10:38:44:617 server.cc(524) Entering Server::LookupCommand
+D 2013-01-20 10:38:44:617 server.cc(233) Command: GET /session/a1effd37-58d8-4586-96ab-17fb43c574bb {}
+T 2013-01-20 10:38:44:617 server.cc(340) Entering Server::LookupSession
+T 2013-01-20 10:38:44:617 IESession.cpp(126) Entering IESession::ExecuteCommand
+T 2013-01-20 10:38:44:617 IECommandExecutor.cpp(174) Entering IECommandExecutor::OnSetCommand
+T 2013-01-20 10:38:44:617 command.cc(27) Entering Command::Populate
+D 2013-01-20 10:38:44:617 command.cc(33) Raw JSON command: { "command" : "getSessionCapabilities", "locator" : { "sessionid" : "a1effd37-58d8-4586-96ab-17fb43c574bb" }, "parameters" : {} }
+T 2013-01-20 10:38:44:617 IECommandExecutor.cpp(185) Entering IECommandExecutor::OnExecCommand
+T 2013-01-20 10:38:44:617 IECommandExecutor.cpp(420) Entering IECommandExecutor::DispatchCommand
+T 2013-01-20 10:38:44:617 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:617 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:617 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:44:617 Browser.cpp(159) Entering Browser::GetWindowHandle
+D 2013-01-20 10:38:44:618 IECommandExecutor.cpp(446) No alert handle is found
+T 2013-01-20 10:38:44:618 response.cc(54) Entering Response::SetSuccessResponse
+T 2013-01-20 10:38:44:618 response.cc(60) Entering Response::SetResponse
+T 2013-01-20 10:38:44:618 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:618 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:618 response.cc(42) Entering Response::Serialize
+T 2013-01-20 10:38:44:618 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:618 IECommandExecutor.cpp(208) Entering IECommandExecutor::OnGetResponse
+T 2013-01-20 10:38:44:618 IECommandExecutor.cpp(302) Entering IECommandExecutor::OnIsSessionValid
+D 2013-01-20 10:38:44:618 server.cc(302) Response: {"sessionId":"a1effd37-58d8-4586-96ab-17fb43c574bb","status":0,"value":{"browserName":"internet explorer","cssSelectorsEnabled":true,"handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":true,"platform":"WINDOWS","takesScreenshot":true,"version":"10"}}
+
+T 2013-01-20 10:38:44:618 server.cc(353) Entering Server::SendResponseToClient
+T 2013-01-20 10:38:44:618 response.cc(31) Entering Response::Deserialize
+T 2013-01-20 10:38:44:618 server.cc(407) Entering Server::SendHttpOk
+T 2013-01-20 10:38:44:711 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:44:711 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:44:711 server.cc(190) Entering Server::ReadRequestBody
+T 2013-01-20 10:38:44:711 server.cc(137) Process request with: URI: /session/a1effd37-58d8-4586-96ab-17fb43c574bb/url HTTP verb: POST
+body: {"url":"http://www.google.com"}
+T 2013-01-20 10:38:44:711 server.cc(224) Entering Server::DispatchCommand
+T 2013-01-20 10:38:44:711 server.cc(524) Entering Server::LookupCommand
+D 2013-01-20 10:38:44:711 server.cc(233) Command: POST /session/a1effd37-58d8-4586-96ab-17fb43c574bb/url {"url":"http://www.google.com"}
+T 2013-01-20 10:38:44:711 server.cc(340) Entering Server::LookupSession
+T 2013-01-20 10:38:44:711 IESession.cpp(126) Entering IESession::ExecuteCommand
+T 2013-01-20 10:38:44:711 IECommandExecutor.cpp(174) Entering IECommandExecutor::OnSetCommand
+T 2013-01-20 10:38:44:711 command.cc(27) Entering Command::Populate
+D 2013-01-20 10:38:44:712 command.cc(33) Raw JSON command: { "command" : "get", "locator" : { "sessionid" : "a1effd37-58d8-4586-96ab-17fb43c574bb" }, "parameters" : {"url":"http://www.google.com"} }
+T 2013-01-20 10:38:44:712 IECommandExecutor.cpp(185) Entering IECommandExecutor::OnExecCommand
+T 2013-01-20 10:38:44:712 IECommandExecutor.cpp(420) Entering IECommandExecutor::DispatchCommand
+T 2013-01-20 10:38:44:712 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:712 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:712 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:44:712 Browser.cpp(159) Entering Browser::GetWindowHandle
+D 2013-01-20 10:38:44:712 IECommandExecutor.cpp(446) No alert handle is found
+T 2013-01-20 10:38:44:712 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:712 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:712 Browser.cpp(264) Entring Browser::NavigateToUrl
+T 2013-01-20 10:38:44:712 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:713 DocumentHost.cpp(105) Entering DocumentHost::SetFocusedFrameByElement
+T 2013-01-20 10:38:44:713 response.cc(54) Entering Response::SetSuccessResponse
+T 2013-01-20 10:38:44:713 response.cc(60) Entering Response::SetResponse
+T 2013-01-20 10:38:44:713 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:713 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:713 response.cc(42) Entering Response::Serialize
+T 2013-01-20 10:38:44:713 IECommandExecutor.cpp(224) Entering IECommandExecutor::OnWait
+T 2013-01-20 10:38:44:713 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:713 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:713 Browser.cpp(373) Entering Browser::Wait
+D 2013-01-20 10:38:44:713 Browser.cpp(377) Navigate Events Completed.
+T 2013-01-20 10:38:44:713 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:44:713 Browser.cpp(159) Entering Browser::GetWindowHandle
+T 2013-01-20 10:38:44:714 Browser.cpp(39) Entering Browser::BeforeNavigate2
+D 2013-01-20 10:38:44:714 Browser.cpp(399) readyState is not 'Complete'.
+T 2013-01-20 10:38:44:722 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:732 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:742 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:752 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:762 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:772 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:782 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:792 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:802 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:812 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:822 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:832 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:842 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:852 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:862 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:872 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:882 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:893 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:903 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:913 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:920 IECommandExecutor.cpp(224) Entering IECommandExecutor::OnWait
+T 2013-01-20 10:38:44:920 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:44:920 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:44:920 Browser.cpp(373) Entering Browser::Wait
+D 2013-01-20 10:38:44:920 Browser.cpp(377) Navigate Events Completed.
+T 2013-01-20 10:38:44:920 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:44:920 Browser.cpp(159) Entering Browser::GetWindowHandle
+T 2013-01-20 10:38:44:923 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+D 2013-01-20 10:38:44:926 Browser.cpp(390) Browser busy property is true.
+T 2013-01-20 10:38:44:933 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:944 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:954 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:964 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:974 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:985 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:44:985 Browser.cpp(39) Entering Browser::BeforeNavigate2
+T 2013-01-20 10:38:44:995 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:005 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:015 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:025 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:035 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:045 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:055 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:065 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:075 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:085 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:095 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:105 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:115 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:124 Browser.cpp(70) Entering Browser::DocumentComplete
+T 2013-01-20 10:38:45:125 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:126 IECommandExecutor.cpp(224) Entering IECommandExecutor::OnWait
+T 2013-01-20 10:38:45:126 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:45:126 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:45:126 Browser.cpp(373) Entering Browser::Wait
+D 2013-01-20 10:38:45:126 Browser.cpp(377) Navigate Events Completed.
+T 2013-01-20 10:38:45:126 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:45:126 Browser.cpp(159) Entering Browser::GetWindowHandle
+T 2013-01-20 10:38:45:135 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:145 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:155 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:165 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:167 Browser.cpp(70) Entering Browser::DocumentComplete
+T 2013-01-20 10:38:45:175 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:185 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:195 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+D 2013-01-20 10:38:45:196 Browser.cpp(416) Waiting for document to complete...
+T 2013-01-20 10:38:45:196 Browser.cpp(429) Entering Browser::IsDocumentNavigating
+D 2013-01-20 10:38:45:197 Browser.cpp(438) readyState is not complete. 
+D 2013-01-20 10:38:45:198 IECommandExecutor.cpp(360) Refreshing managed element cache. Found 0 to remove from cache.
+T 2013-01-20 10:38:45:205 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:215 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:225 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:235 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:245 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:255 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:265 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:275 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:285 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:295 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:305 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:315 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:325 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:335 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:345 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:355 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:358 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:45:358 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:45:358 server.cc(137) Process request with: URI: /favicon.ico HTTP verb: GET
+body: {}
+T 2013-01-20 10:38:45:358 server.cc(224) Entering Server::DispatchCommand
+T 2013-01-20 10:38:45:359 server.cc(524) Entering Server::LookupCommand
+D 2013-01-20 10:38:45:359 server.cc(233) Command: GET /favicon.ico {}
+D 2013-01-20 10:38:45:359 server.cc(302) Response: { "status" : 404, "sessionId" : "<no session>", "value" : "Command not found: GET /favicon.ico" }
+T 2013-01-20 10:38:45:359 server.cc(353) Entering Server::SendResponseToClient
+T 2013-01-20 10:38:45:359 response.cc(31) Entering Response::Deserialize
+T 2013-01-20 10:38:45:359 server.cc(464) Entering Server::SendHttpNotFound
+T 2013-01-20 10:38:45:365 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:375 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:385 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:395 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:402 IECommandExecutor.cpp(224) Entering IECommandExecutor::OnWait
+T 2013-01-20 10:38:45:402 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:45:402 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:45:402 Browser.cpp(373) Entering Browser::Wait
+D 2013-01-20 10:38:45:402 Browser.cpp(377) Navigate Events Completed.
+T 2013-01-20 10:38:45:402 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:45:402 Browser.cpp(159) Entering Browser::GetWindowHandle
+T 2013-01-20 10:38:45:405 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:415 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:425 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:435 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:445 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:455 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:465 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:475 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:485 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:495 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:505 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:515 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:525 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+D 2013-01-20 10:38:45:531 Browser.cpp(390) Browser busy property is true.
+T 2013-01-20 10:38:45:535 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:545 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:557 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:567 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:577 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:587 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:597 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:607 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:617 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:627 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:637 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:648 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:658 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:668 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:678 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:688 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:698 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:708 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:718 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:728 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:731 IECommandExecutor.cpp(224) Entering IECommandExecutor::OnWait
+T 2013-01-20 10:38:45:731 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:45:731 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:45:731 Browser.cpp(373) Entering Browser::Wait
+D 2013-01-20 10:38:45:731 Browser.cpp(377) Navigate Events Completed.
+T 2013-01-20 10:38:45:731 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:45:731 Browser.cpp(159) Entering Browser::GetWindowHandle
+D 2013-01-20 10:38:45:732 Browser.cpp(416) Waiting for document to complete...
+T 2013-01-20 10:38:45:732 Browser.cpp(429) Entering Browser::IsDocumentNavigating
+T 2013-01-20 10:38:45:738 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:739 Browser.cpp(500) Entering Browser::GetDocumentFromWindow
+T 2013-01-20 10:38:45:742 Browser.cpp(429) Entering Browser::IsDocumentNavigating
+D 2013-01-20 10:38:45:745 Browser.cpp(421) Not in navigating state
+T 2013-01-20 10:38:45:748 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:758 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:45:758 IECommandExecutor.cpp(208) Entering IECommandExecutor::OnGetResponse
+T 2013-01-20 10:38:45:758 IECommandExecutor.cpp(302) Entering IECommandExecutor::OnIsSessionValid
+D 2013-01-20 10:38:45:758 server.cc(302) Response: {"sessionId":"a1effd37-58d8-4586-96ab-17fb43c574bb","status":0,"value":null}
+
+T 2013-01-20 10:38:45:758 server.cc(353) Entering Server::SendResponseToClient
+T 2013-01-20 10:38:45:758 response.cc(31) Entering Response::Deserialize
+T 2013-01-20 10:38:45:758 server.cc(407) Entering Server::SendHttpOk
+T 2013-01-20 10:38:50:760 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:50:760 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:50:760 server.cc(137) Process request with: URI: /session/a1effd37-58d8-4586-96ab-17fb43c574bb/url HTTP verb: GET
+body: {}
+T 2013-01-20 10:38:50:760 server.cc(224) Entering Server::DispatchCommand
+T 2013-01-20 10:38:50:760 server.cc(524) Entering Server::LookupCommand
+D 2013-01-20 10:38:50:761 server.cc(233) Command: GET /session/a1effd37-58d8-4586-96ab-17fb43c574bb/url {}
+T 2013-01-20 10:38:50:761 server.cc(340) Entering Server::LookupSession
+T 2013-01-20 10:38:50:761 IESession.cpp(126) Entering IESession::ExecuteCommand
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(174) Entering IECommandExecutor::OnSetCommand
+T 2013-01-20 10:38:50:761 command.cc(27) Entering Command::Populate
+D 2013-01-20 10:38:50:761 command.cc(33) Raw JSON command: { "command" : "getCurrentUrl", "locator" : { "sessionid" : "a1effd37-58d8-4586-96ab-17fb43c574bb" }, "parameters" : {} }
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(185) Entering IECommandExecutor::OnExecCommand
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(420) Entering IECommandExecutor::DispatchCommand
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:50:761 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:50:761 Browser.cpp(159) Entering Browser::GetWindowHandle
+D 2013-01-20 10:38:50:761 IECommandExecutor.cpp(446) No alert handle is found
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:50:761 DocumentHost.cpp(49) Entering DocumentHost::GetCurrentUrl
+T 2013-01-20 10:38:50:761 Browser.cpp(95) Entering Browser::GetDocument
+I 2013-01-20 10:38:50:761 Browser.cpp(99) No child frame focus. Focus is on top-level frame
+T 2013-01-20 10:38:50:761 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:50:767 Browser.cpp(500) Entering Browser::GetDocumentFromWindow
+T 2013-01-20 10:38:50:771 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:50:772 response.cc(54) Entering Response::SetSuccessResponse
+T 2013-01-20 10:38:50:772 response.cc(60) Entering Response::SetResponse
+T 2013-01-20 10:38:50:772 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:50:772 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:50:772 response.cc(42) Entering Response::Serialize
+T 2013-01-20 10:38:50:781 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:50:781 IECommandExecutor.cpp(208) Entering IECommandExecutor::OnGetResponse
+T 2013-01-20 10:38:50:781 IECommandExecutor.cpp(302) Entering IECommandExecutor::OnIsSessionValid
+D 2013-01-20 10:38:50:781 server.cc(302) Response: {"sessionId":"a1effd37-58d8-4586-96ab-17fb43c574bb","status":0,"value":"http://www.google.com/"}
+
+T 2013-01-20 10:38:50:781 server.cc(353) Entering Server::SendResponseToClient
+T 2013-01-20 10:38:50:781 response.cc(31) Entering Response::Deserialize
+T 2013-01-20 10:38:50:781 server.cc(407) Entering Server::SendHttpOk
+T 2013-01-20 10:38:50:785 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:50:785 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:50:785 server.cc(137) Process request with: URI: /session/a1effd37-58d8-4586-96ab-17fb43c574bb HTTP verb: DELETE
+body: {}
+T 2013-01-20 10:38:50:785 server.cc(224) Entering Server::DispatchCommand
+T 2013-01-20 10:38:50:785 server.cc(524) Entering Server::LookupCommand
+D 2013-01-20 10:38:50:785 server.cc(233) Command: DELETE /session/a1effd37-58d8-4586-96ab-17fb43c574bb {}
+T 2013-01-20 10:38:50:786 server.cc(340) Entering Server::LookupSession
+T 2013-01-20 10:38:50:786 IESession.cpp(126) Entering IESession::ExecuteCommand
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(174) Entering IECommandExecutor::OnSetCommand
+T 2013-01-20 10:38:50:786 command.cc(27) Entering Command::Populate
+D 2013-01-20 10:38:50:786 command.cc(33) Raw JSON command: { "command" : "quit", "locator" : { "sessionid" : "a1effd37-58d8-4586-96ab-17fb43c574bb" }, "parameters" : {} }
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(185) Entering IECommandExecutor::OnExecCommand
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(420) Entering IECommandExecutor::DispatchCommand
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:50:786 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:50:786 Browser.cpp(159) Entering Browser::GetWindowHandle
+D 2013-01-20 10:38:50:786 IECommandExecutor.cpp(446) No alert handle is found
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(542) Entering IECommandExecutor::GetManagedBrowserHandles
+T 2013-01-20 10:38:50:786 Browser.cpp(568) Entering Browser::GetActiveDialogWindowHandle
+T 2013-01-20 10:38:50:786 Browser.cpp(159) Entering Browser::GetWindowHandle
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+T 2013-01-20 10:38:50:786 Browser.cpp(253) Entering Browser::Close
+T 2013-01-20 10:38:50:786 DocumentHost.cpp(105) Entering DocumentHost::SetFocusedFrameByElement
+T 2013-01-20 10:38:50:786 response.cc(54) Entering Response::SetSuccessResponse
+T 2013-01-20 10:38:50:786 response.cc(60) Entering Response::SetResponse
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(513) Entering IECommandExecutor::GetCurrentBrowser
+T 2013-01-20 10:38:50:786 IECommandExecutor.cpp(519) Entering IECommandExecutor::GetManagedBrowser
+W 2013-01-20 10:38:50:786 IECommandExecutor.cpp(505) Unable to get current browser
+T 2013-01-20 10:38:50:787 response.cc(42) Entering Response::Serialize
+T 2013-01-20 10:38:50:788 Browser.cpp(43) Entering Browser::OnQuit
+T 2013-01-20 10:38:50:788 DocumentHost.cpp(297) Entering DocumentHost::PostQuitMessage
+T 2013-01-20 10:38:50:788 IECommandExecutor.cpp(281) Entering IECommandExecutor::OnBrowserQuit
+T 2013-01-20 10:38:50:788 Browser.cpp(246) Entering Browser::DetachEvents
+T 2013-01-20 10:38:50:796 IECommandExecutor.cpp(195) Entering IECommandExecutor::OnGetResponseLength
+T 2013-01-20 10:38:50:796 IECommandExecutor.cpp(208) Entering IECommandExecutor::OnGetResponse
+T 2013-01-20 10:38:50:796 IECommandExecutor.cpp(302) Entering IECommandExecutor::OnIsSessionValid
+T 2013-01-20 10:38:50:796 server.cc(177) Entering Server::ShutDownSession
+T 2013-01-20 10:38:50:796 IESession.cpp(91) Entering IESession::ShutDown
+T 2013-01-20 10:38:50:796 IECommandExecutor.cpp(154) Entering IECommandExecutor::OnClose
+T 2013-01-20 10:38:50:796 IECommandExecutor.cpp(164) Entering IECommandExecutor::OnDestroy
+D 2013-01-20 10:38:51:398 server.cc(302) Response: {"sessionId":"a1effd37-58d8-4586-96ab-17fb43c574bb","status":0,"value":null}
+
+T 2013-01-20 10:38:51:399 server.cc(353) Entering Server::SendResponseToClient
+T 2013-01-20 10:38:51:399 response.cc(31) Entering Response::Deserialize
+T 2013-01-20 10:38:51:399 server.cc(407) Entering Server::SendHttpOk
+T 2013-01-20 10:38:51:405 server.cc(62) Entering Server::OnHttpEvent
+T 2013-01-20 10:38:51:405 server.cc(128) Entering Server::ProcessRequest
+T 2013-01-20 10:38:51:405 server.cc(137) Process request with: URI: /shutdown HTTP verb: GET
+body: {}
+T 2013-01-20 10:38:51:405 server.cc(407) Entering Server::SendHttpOk
+T 2013-01-20 10:38:51:406 server.cc(119) Entering Server::Stop
