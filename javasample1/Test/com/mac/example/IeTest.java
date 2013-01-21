@@ -1,5 +1,8 @@
 package com.mac.example;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
@@ -18,6 +21,7 @@ public class IeTest {
 	private String baseUrl;
 	private StringBuffer verificationErrors = new StringBuffer();
 
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() throws Exception {
 		System.setProperty("webdriver.ie.driver",
@@ -51,6 +55,7 @@ public class IeTest {
 		}
 	}
 
+	@AfterMethod
 	@AfterClass
 	public void tearDown() throws Exception {
 		driver.quit();

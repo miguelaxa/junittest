@@ -1,4 +1,7 @@
 package com.mac.example;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import com.thoughtworks.selenium.*;
 import java.io.File;
 
@@ -15,7 +18,8 @@ import org.testng.annotations.Test;
 
 public class Seltest extends SeleneseTestBase{
     
-    @BeforeClass
+    @BeforeMethod
+	@BeforeClass
     public void setUp() throws Exception {
         SeleniumServer seleniumserver=new SeleniumServer();
         seleniumserver.boot();
@@ -54,7 +58,8 @@ public class Seltest extends SeleneseTestBase{
         verifyTrue(selenium.isTextPresent(actorName));
     }
     
-    @AfterClass
+    @AfterMethod
+	@AfterClass
     public void tearDown(){
         selenium.close();
         selenium.stop();

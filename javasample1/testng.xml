@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none">
-	<test name="Test">
-		<classes>
-			<class name="com.mac.example.Seltest" />
-			<class name="com.mac.example.Ietest" />
-			<class name="com.mac.example.selenium.GoogleSuggest" />
-		</classes>
-	</test> <!-- Test -->
+<suite name="Suite" parallel="tests">
+  <test name="Test">
+    <classes>
+      <class name="com.mac.example.Seltest"/>
+      <class name="com.mac.example.IeTest"/>
+      <class name="com.mac.example.StartPointTest"/>
+      <class name="com.mac.example.CopyOfSeltest"/>
+      <class name="com.mac.example.TicTacToeTest"/>
+      <class name="com.mac.example.shapeTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

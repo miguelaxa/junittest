@@ -3,10 +3,9 @@
  */
 package com.mac.example;
 
-import static org.junit.Assert.*;
-
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 
 /**
  * @author mac
@@ -24,19 +23,19 @@ public class shapeTest {
 	@Test
 	public void testShape() {
 		shape myShape = new shape(3, "red");
-		assertEquals("Result", 16, myShape.multShape(2, 2, 4));
+		AssertJUnit.assertEquals("Result", 16, myShape.multShape(2, 2, 4));
 	}
 
 	@Test
 	public void testPshape() {
 		shape myShape = new shape(6, "blue");
-		assertEquals("Result", 8, myShape.multShape(2, 2, 4));
+		AssertJUnit.assertEquals("Result", 8, myShape.multShape(2, 2, 4));
 	}
 
 	@Test
 	public void testmmshape() {
 		shape myShape = new shape(9, "yellow");
-		assertEquals("Result", 146, myShape.multShape(12, 12, 2));
+		AssertJUnit.assertEquals("Result", 146, myShape.multShape(12, 12, 2));
 	}
 
 }

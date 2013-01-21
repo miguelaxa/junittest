@@ -1,12 +1,12 @@
 package com.mac.example;
 
-import static org.junit.Assert.*;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 
 public class StartPointTest {
 
@@ -20,20 +20,20 @@ public class StartPointTest {
 	public static void tearDownAfterClass() throws Exception {
 	}
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		startPoint = new StartPoint();
 
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 	}
 
 	@Test
 	public void testAdder() {
 		
-		assertEquals("Result", 26, startPoint.adder(24, 2));
+		AssertJUnit.assertEquals("Result", 26, startPoint.adder(24, 2));
 	}
 
 	@Test
@@ -45,7 +45,7 @@ public class StartPointTest {
 			System.out.println("good 1");
 		} else {
 			System.out.println("good bad ans = " + add_ans);
-			fail("Not yet implemented");
+			Assert.fail("Not yet implemented");
 
 		}
 	}
