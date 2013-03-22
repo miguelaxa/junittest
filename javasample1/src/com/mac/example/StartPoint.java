@@ -35,5 +35,11 @@ public class StartPoint {
 
 		return (int) add_res;
 	}
+	
+	public String ans(){
+	System.out.println("now");
+	return NULL;
+	}
+	
 
 }
